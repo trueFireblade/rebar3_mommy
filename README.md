@@ -12,7 +12,7 @@ Add the plugin to your `rebar.config`:
 
 Then just call your plugin directly in an existing application:
 ```sh
-$ rebar3 rebar3_mommy <commands>
+$ rebar3 mommy <commands>
 ```
 
 ## Configuration
