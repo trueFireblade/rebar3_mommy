@@ -1,0 +1,8 @@
+{application,
+ rebar3_mommy,
+ [{description, "A rebar plugin"},
+  {vsn, git},
+  {applications, [kernel, stdlib]},
+  {env, []},
+  {licenses, ["Apache 2.0"]},
+  {links, [{"github", "https://github.com/vkatsuba/rebar3_plugin"}]}]}.

@@ -1,0 +1,13 @@
+.eunit
+*.o
+*.beam
+*.plt
+erl_crash.dump
+.concrete/DEV_MODE
+
+# rebar 3
+_build
+log
+rebar3.crashdump
+rebar.lock
+_checkouts/
