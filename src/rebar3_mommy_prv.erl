@@ -43,7 +43,7 @@ do(State) ->
                     rebar3_mommy_writer:positive(Vars),
                     {ok, State2};
                 {error, {Module, Err}} ->
-                    rebar_api:error("~ts", [apply(Module, format_error, [Err])]),  
+                    rebar_api:error("~ts", [apply(Module, format_error, [Err])]),
                     {error, {?MODULE, {failed, Vars}}}
             end
     end.
@@ -58,7 +58,7 @@ parse_opts(State) ->
 
 -spec get_vars(rebar_state:t()) -> #mommy_opts{}.
 get_vars(State) ->
-    ConfigRaw = maps:from_list(rebar_state:get(State, rebar3_mommy, [[]])),
+    ConfigRaw = maps:from_list(rebar_state:get(State, rebar3_mommy, [])),
     Little   = get_var(ConfigRaw, little, "girl"),
     Pronouns = get_var(ConfigRaw, pronouns, "her"),
     Roles    = get_var(ConfigRaw, roles, "mommy"),
